@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/logosite2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/estilo_perfil.css">
+    <script src="../javascript/script.js"></script>
+    <title>Perfil - Ká Entre Nós</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Informações e Perfil</h1>
+        </div>
+        <div class="header-right">
+            <nav>
+                <a href="../html/app_home_page.html"><img src="../imagens/home_icon.png" alt="Ícone Início"> Início</a>
+                <a href="../html/bem_vindo.html"><img src="../imagens/sair_icon.png" alt="Ícone Sair"> Sair</a>
+                <button class="support-btn" onclick="openModal()">
+                    <img src="../imagens/suporte_icon.png" alt="Suporte">
+                    Suporte
+                </button>
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <h2>Precisando de Ajuda?</h2>
+                        <p>Estamos aqui para ajudar! Para obter suporte técnico da nossa equipe, siga as instruções abaixo e entre em contato conosco por e-mail.</p>
+                        <h3>Instruções para o E-mail</h3>
+                        <ol>
+                            <li>Informe o nome da escola e o código escolar.</li>
+                            <li>Descreva o problema técnico que está enfrentando.</li>
+                            <li>Anexe capturas de tela, se possível, para que possamos entender melhor sua situação.</li>
+                        </ol>
+                        <button class="email-btn">Ir ao E-mail</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="perfil">
+            <div class="perfil-escola">
+                <div class="perfil-header">
+                    <div class="perfil-icon">
+                        <div class="perfil-initial">F</div>
+                    </div>
+                    <div class="perfil-info">
+                        <h2>Fundação Instituto T. Osasco</h2>
+                        <p><span class="status ativo"></span> Ativo</p>
+                    </div>
+                </div>
+                <div class="contato-info">
+                    <p>Para alterar seus dados cadastrais ou esclarecer dúvidas sobre o contrato, entre em contato pelo e-mail <a href="mailto:entreknos2023@gmail.com">entreknos2023@gmail.com</a>.</p>
+                </div>
+            </div>
+
+            <div class="informacoes">
+                <div class="coluna">
+                    <h3>Informações Gerais</h3>
+                    <ul>
+                        <li><strong>Nome da Escola</strong><br>Fundação Instituto Tecnológico de Osasco</li>
+                        <li><strong>Código Escolar</strong><br>39000036</li>
+                        <li><strong>E-mail Escolar</strong><br>fundação@gmail.com</li>
+                        <li><strong>Telefone</strong><br>(11) 3678-7836</li>
+                    </ul>
+                </div>
+                <div class="coluna">
+                    <h3>Contrato</h3>
+                    <ul>
+                        <li><strong>Período do Contrato</strong><br>3 Meses</li>
+                        <li><strong>Término do Contrato</strong><br>31 / Novembro / 2024</li>
+                    </ul>
+                    <h3>Monitoramento</h3>
+                    <ul>
+                        <li><strong>Limite de Aluno</strong><br>500</li>
+                        <li><strong>Registro de Aluno</strong><br>420</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

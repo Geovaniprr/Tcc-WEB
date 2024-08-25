@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'poppins-regular';
+    src: url('../fontes/poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppins-medium';
+    src: url('../fontes/poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppins-light';
+    src: url('../fontes/poppins/Poppins-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppins-bold';
+    src: url('../fontes/poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppins-extralight';
+    src: url('../fontes/poppins/Poppins-ExtraLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+    margin: 0;
+    background: linear-gradient(135deg, #0B71F7, #19538B);
+}
+
+header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.logo {
+    width: 150px;
+    margin: 20px;
+}
+
+.cabecalho {
+    text-align: left;
+    margin-bottom: 20px;
+    margin-right: 80px ;
+}
+
+.cabecalho h1 {
+    margin: 0;
+    font-family: 'poppins-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.cabecalho h2 {
+    margin: 15px 0 5px 0;
+    font-weight: normal;
+    font-size: 20px;
+    font-family: 'poppins-light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+.container {
+    background-color: white;
+    padding: 50px 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin-bottom: 220px;
+
+}
+
+form {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'poppins-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #000000;
+    position: relative;
+    z-index: 1;
+}
+
+legend::after {
+    content: "";
+    display: block;
+    width: calc(120% - 5px);
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    top: 120%;
+    
+    z-index: -1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 15px 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+form input::placeholder,
+form select::placeholder {
+    font-family: 'poppins-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: #6d6d6d;
+    letter-spacing: 1px;
+}
+
+select option,
+select option:disabled {
+    font-family: 'poppins-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+select{
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button {
+    background-color: #00D0B3;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-family: 'poppins-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #00A591;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 10px 0;
+    font-size: 15px;
+    font-family: 'poppins-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+}
+
+label a {
+    color: #00A591;
+    text-decoration: none;
+}
+
+a span:hover {
+    text-decoration: underline;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}

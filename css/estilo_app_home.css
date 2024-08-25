@@ -1,0 +1,514 @@
+@font-face {
+    font-family: 'poppins-regular';
+    src: url('../fontes/poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppins-medium';
+    src: url('../fontes/poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppins-light';
+    src: url('../fontes/poppins/Poppins-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppins-bold';
+    src: url('../fontes/poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppins-extralight';
+    src: url('../fontes/poppins/Poppins-ExtraLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    padding: 20px 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 7px 0px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #002D69;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.logo-text{
+    margin-left: 10px;
+}
+
+.logo-text h1 {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 2px;
+    font-family: 'poppins-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo-text p {
+    font-size: 14px;
+    color: #555;
+    font-family: 'poppins-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a,
+header nav .support-btn {
+    display: flex;
+    align-items: center;
+    margin-right: 50px; 
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'poppins-light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+
+header nav a, header nav .support-btn{
+    transition: transform 0.15s;
+}
+
+header nav a:hover, header nav .support-btn:hover {
+    transform: scale(1.2);
+}
+
+header nav .support-btn {
+    background-color: #00D2D4; 
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Estilos para as imagens dos ícones */
+header nav a img,
+header nav .support-btn img {
+    height: 25px; /* Altura dos ícones */
+    margin-right: 9px; /* Espaçamento entre o ícone e o texto */
+}
+
+.area {
+    color: white;
+    padding: 105px 40px;
+    border-radius: 0 0 20px 20px;
+    background-image: url('../imagens/Moldura.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+.area-content{
+    margin-bottom: 70px;
+    margin-left: 20px;
+}
+
+.area-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: 'poppins-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.area-content p {
+    font-size: 18px;
+    font-family: 'poppins-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    padding: 20px;
+}
+
+.monitoramento-container,
+.relatos-container {
+    width: 90%;
+    max-width: 1200px; /* Defina uma largura máxima consistente */
+    margin: 0 auto; /* Centraliza os contêineres */
+}
+
+.mon-texto {
+    margin-bottom: 20px;
+    font-family: 'poppins-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.monitoramento h1 {
+    font-size: 24px;
+    margin-bottom: 70px; /* Ajusta o espaço abaixo do título */
+    margin-left: 60px;
+    border-bottom: 1px solid #bebaba;
+    max-width: 1180px;
+}
+
+.monitoramento-item img{
+    height: 35px;
+    margin-right: 15px;
+}
+
+.monitoramento-item button{
+   display: flex;
+   justify-content: center;
+}
+
+.monitoramento{
+    margin-bottom: 30px;
+}
+
+.mon-container{
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    align-items: center;
+    gap: 390px; /* Espaçamento entre os botões */
+}
+
+.btn-primary {
+    background-color: #002D69;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'poppins-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.btn-primary{
+    transition: transform 0.15s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.2);
+}
+
+.texto2{
+    margin-bottom: 10px; /* Ajusta o espaço abaixo do título */
+    text-align: left;
+    border-bottom: 1px solid #bebaba;
+    padding-left: 10px; /* Espaçamento à esquerda do título */
+}
+
+.texto2 h1{
+    font-family: 'poppins-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+}
+
+.relatos-container .relato {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    font-family: 'poppins-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.relatos-container h1{
+    border-bottom: 1px solid #bebaba;
+    font-family: 'poppins-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: 90px;
+}
+
+.relato-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centraliza verticalmente o status */
+    margin-bottom: 10px;
+}
+
+.relato-type {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.badge {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.red {
+    background-color: #d3161c;
+}
+
+.blue {
+    background-color: #0ddbdf;
+}
+
+.relato-status {
+    color: #e7ad25;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.relato-body {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.relato-body strong {
+    font-weight: bold;
+}
+
+
+.user-menu {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+
+.modal-content {
+    background-color: white;
+    color:#000000 ;
+    margin: 10% auto;
+    padding: 40px;
+    border: 1px solid #888;
+    width: 90%;
+    
+    max-width: 400px;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'poppins-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.modal-content h2, h3{
+    margin-top: 20px;
+    font-size: 19px;
+}
+
+body.modal-content{
+    overflow: hidden;
+}
+
+.modal-content p{
+    margin-top: 10px;
+}
+
+.modal-content ol li{
+    text-align: left;
+    margin: 10px;
+    font-size: 15px;
+}
+
+/* Estilo do botão de fechar */
+.close {
+    color: #000000;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.close:hover, .close:focus {
+    color: black;
+}
+
+
+/* Estilo do botão de e-mail */
+.email-btn {
+    background-color: #00D2D4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    font-family: 'poppins-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+    
+/*RESPOSIVIDADE*/
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    header nav {
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+    
+    header nav a,
+    header nav .support-btn {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .logo-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .logo-text h1 {
+        font-size: 16px;
+    }
+
+    .logo-text p {
+        font-size: 12px;
+    }
+
+    .area-content h2 {
+        font-size: 22px;
+    }
+
+    .area-content p {
+        font-size: 16px;
+    }
+
+    .monitoramento h1,
+    .relatos-container h1 {
+        font-size: 20px;
+        margin-bottom: 30px;
+        margin-left: 0;
+        text-align: center;
+        border-bottom: none;
+    }
+
+    .mon-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .btn-primary {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .relatos-container .relato {
+        padding: 15px;
+    }
+
+    .relato-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .relato-status {
+        margin-top: 10px;
+    }
+}
+
+/* Para tablets (telas médias) */
+@media (max-width: 1024px) {
+    .area {
+        padding: 80px 20px;
+    }
+
+    .monitoramento-container,
+    .relatos-container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .mon-container {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .btn-primary {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .relato-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Estilos específicos para telas muito grandes (acima de 1200px) */
+@media (min-width: 1200px) {
+    header {
+        padding: 30px 50px;
+    }
+
+    .area-content {
+        margin-left: 40px;
+    }
+
+    .monitoramento h1,
+    .relatos-container h1 {
+        font-size: 28px;
+    }
+
+    .btn-primary {
+        padding: 20px 40px;
+        font-size: 22px;
+    }
+}

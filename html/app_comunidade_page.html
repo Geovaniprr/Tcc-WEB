@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/logosite2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/estilo_app_comunidade.css">
+    <script src="../javascript/script.js" defer></script>
+    <title>Comunidade Escolar</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Comunidade Escolar</h1>
+        </div>
+        <div class="header-right">
+            <nav>
+                <a href="../html/app_home_page.html"><img src="../imagens/home_icon.png" alt="Ícone Início"> Início</a>
+                <a href="../html/bem_vindo.html"><img src="../imagens/sair_icon.png" alt="Ícone Sair"> Sair</a>
+                <button class="support-btn" onclick="openModal()">
+                    <img src="../imagens/suporte_icon.png" alt="Suporte">
+                    Suporte
+                </button>
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <h2>Precisando de Ajuda?</h2>
+                        <p>Estamos aqui para ajudar! Para obter suporte técnico da nossa equipe, siga as instruções abaixo e entre em contato conosco por e-mail.</p>
+                        <h3>Instruções para o E-mail</h3>
+                        <ol>
+                            <li>Informe o nome da escola e o código escolar.</li>
+                            <li>Descreva o problema técnico que está enfrentando.</li>
+                            <li>Anexe capturas de tela, se possível, para que possamos entender melhor sua situação.</li>
+                        </ol>
+                        <button class="email-btn">Ir ao E-mail</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="description">
+        <p>
+            Aqui, você pode acompanhar e monitorar as postagens de relatos dos alunos. Se identificar qualquer
+            incoerência ou conteúdo inadequado, você tem a opção de excluir a postagem para manter um ambiente seguro e
+            respeitoso para todos.
+        </p>
+    </section>
+
+    <main>
+        <section class="posts">
+            <h2>Postagem dos Alunos</h2>
+        
+            <div class="post">
+                <div class="post-header">
+                    <div class="profile-icon">G</div>
+                    <div class="post-info">
+                        <h3>Guilherme M.</h3>
+                        <p>Aluno</p>
+                    </div>
+                    <div class="post-options" onclick="toggleMenu(this)">...</div>
+                    <div class="post-menu">
+                        <div class="menu-item" onclick="deletePost(this)">Apagar Postagem <span class="close-menu">&times;</span></div>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultricies maximus tortor ac
+                        tempus. Fusce vitae justo nisl. Nulla at turpis pharetra, convallis turpis ut, fringilla risus.
+                    </p>
+                </div>
+                <div class="post-footer">
+                    <span>10</span> <img src="../imagens/Curtida.png" alt="Like Icon">
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="post-header">
+                    <div class="profile-icon">C</div>
+                    <div class="post-info">
+                        <h3>Caroline F.</h3>
+                        <p>Aluna</p>
+                    </div>
+                    <div class="post-options" onclick="toggleMenu(this)">...</div>
+                    <div class="post-menu">
+                        <div class="menu-item" onclick="deletePost(this)">Apagar Postagem <span class="close-menu">&times;</span></div>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultricies maximus tortor ac
+                        tempus. Fusce vitae justo nisl. Nulla at turpis pharetra, convallis turpis ut, fringilla
+                        risus.
+                    </p>
+                </div>
+                <div class="post-footer">
+                    <span>11</span> <img src="../imagens/Curtido.png" alt="Like Icon">
+                </div>
+            </div>
+        </section>
+        
+    </main>
+</body>
+
+</html>
