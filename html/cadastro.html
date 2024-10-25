@@ -21,7 +21,7 @@
         <form>
             <fieldset>
                 <legend>Informações Gerais</legend>
-                <input type="text" placeholder="Nome da Escola" required>
+                <input type="text" class="nome" name="nome" placeholder="Nome da Escola" required>
                 <select required>
                     <option value="" disabled selected>Rede Escolar</option>
                     <option value="publica">Pública</option>
@@ -33,13 +33,13 @@
                     <option value="medio">Médio</option>
                     <option value="grande">Grande</option>
                 </select>
-                <input type="text" placeholder="Código Escolar" required>
+                <input type="text" class="codigo" placeholder="Código Escolar" required>
             </fieldset>
             <fieldset>
                 <legend>Contato</legend>
-                <input type="email" placeholder="E-mail Escolar" required>
-                <input type="tel" placeholder="Telefone / Celular" required>
-                <input type="text" placeholder="Responsável" required>
+                <input type="email" class="login" name="login" placeholder="E-mail Escolar" required>
+                <input type="password" class="senha" name="senha" placeholder="Senha" required>
+                <input type="text" class="responsavel" placeholder="Responsável" required>
                 <label>
                     <input type="checkbox" required> Eu li e concordo com a <a href="#">Política de privacidade</a>
                 </label>
@@ -47,6 +47,7 @@
             <button type="submit">ENTRAR</button>
         </form>
     </div>
+    <script src="appCadastro.js"></script>
 </body>
 
 </html>
